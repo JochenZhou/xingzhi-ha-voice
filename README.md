@@ -82,4 +82,5 @@
 * https://bbs.hassbian.com/thread-29342-1-1.html
 * https://gemini.google.com/
 * https://github.com/esphome/wake-word-voice-assistants
+* https://github.com/RealDeco/xiaozhi-esphome
 * 此项目基于 ESPHome 官方提供的语音助手示例进行修改和增强，并针对行者 星智1.54 WiFi 硬件进行了适配。感谢 ESPHome 和 Home Assistant 社区的卓越工作。
