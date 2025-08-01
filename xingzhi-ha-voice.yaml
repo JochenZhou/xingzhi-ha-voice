@@ -918,8 +918,8 @@ display:
           id(draw_timer_timeline).execute();
           id(draw_active_timer_widget).execute();
           int volume_percent = round(id(speaker_media_player).volume * 100);
-          it.printf(2, 2, id(font_response), Color::WHITE, "音量: %d%%", volume_percent);
-          it.printf(120, 2, id(font_response), Color::WHITE, TextAlign::TOP_CENTER, "%s", id(ha_time).now().strftime("%H:%M").c_str());
+          it.printf(2, 2, id(font_response), Color::BLACK, "音量: %d%%", volume_percent);
+          it.printf(120, 2, id(font_response), Color::BLACK, TextAlign::TOP_CENTER, "%s", id(ha_time).now().strftime("%H:%M").c_str());
       - id: listening_page
         lambda: |-
           it.fill(id(listening_color));
@@ -958,34 +958,34 @@ display:
           it.fill(id(idle_color));
           it.image((it.get_width() / 2), (it.get_height() / 2), id(casita_timer_finished), ImageAlign::CENTER);
           int volume_percent = round(id(speaker_media_player).volume * 100);
-          it.printf(2, 2, id(font_response), Color::WHITE, "音量: %d%%", volume_percent);
-          it.printf(120, 2, id(font_response), Color::WHITE, TextAlign::TOP_CENTER, "%s", id(ha_time).now().strftime("%H:%M").c_str());
+          it.printf(2, 2, id(font_response), Color::BLACK, "音量: %d%%", volume_percent);
+          it.printf(120, 2, id(font_response), Color::BLACK, TextAlign::TOP_CENTER, "%s", id(ha_time).now().strftime("%H:%M").c_str());
       - id: error_page
         lambda: |-
           it.fill(id(error_color));
           it.image((it.get_width() / 2), (it.get_height() / 2), id(casita_error), ImageAlign::CENTER);
           int volume_percent = round(id(speaker_media_player).volume * 100);
-          it.printf(2, 2, id(font_response), Color::WHITE, "音量: %d%%", volume_percent);
-          it.printf(120, 2, id(font_response), Color::WHITE, TextAlign::TOP_CENTER, "%s", id(ha_time).now().strftime("%H:%M").c_str());
+          it.printf(2, 2, id(font_response), Color::BLACK, "音量: %d%%", volume_percent);
+          it.printf(120, 2, id(font_response), Color::BLACK, TextAlign::TOP_CENTER, "%s", id(ha_time).now().strftime("%H:%M").c_str());
       - id: no_ha_page
         lambda: |-
           it.image((it.get_width() / 2), (it.get_height() / 2), id(error_no_ha), ImageAlign::CENTER);
           int volume_percent = round(id(speaker_media_player).volume * 100);
-          it.printf(2, 2, id(font_response), Color::BLACK, "音量: %d%%", volume_percent);
-          it.printf(120, 2, id(font_response), Color::BLACK, TextAlign::TOP_CENTER, "%s", id(ha_time).now().strftime("%H:%M").c_str());
+          it.printf(2, 2, id(font_response), Color::WHITE, "音量: %d%%", volume_percent);
+          it.printf(120, 2, id(font_response), Color::WHITE, TextAlign::TOP_CENTER, "%s", id(ha_time).now().strftime("%H:%M").c_str());
       - id: no_wifi_page
         lambda: |-
           it.image((it.get_width() / 2), (it.get_height() / 2), id(error_no_wifi), ImageAlign::CENTER);
           int volume_percent = round(id(speaker_media_player).volume * 100);
-          it.printf(2, 2, id(font_response), Color::BLACK, "音量: %d%%", volume_percent);
-          it.printf(120, 2, id(font_response), Color::BLACK, TextAlign::TOP_CENTER, "%s", id(ha_time).now().strftime("%H:%M").c_str());
+          it.printf(2, 2, id(font_response), Color::WHITE, "音量: %d%%", volume_percent);
+          it.printf(120, 2, id(font_response), Color::WHITE, TextAlign::TOP_CENTER, "%s", id(ha_time).now().strftime("%H:%M").c_str());
       - id: initializing_page
         lambda: |-
           it.fill(id(loading_color));
           it.image((it.get_width() / 2), (it.get_height() / 2), id(casita_initializing), ImageAlign::CENTER);
           int volume_percent = round(id(speaker_media_player).volume * 100);
-          it.printf(2, 2, id(font_response), Color::WHITE, "音量: %d%%", volume_percent);
-          it.printf(120, 2, id(font_response), Color::WHITE, TextAlign::TOP_CENTER, "%s", id(ha_time).now().strftime("%H:%M").c_str());
+          it.printf(2, 2, id(font_response), Color::BLACK, "音量: %d%%", volume_percent);
+          it.printf(120, 2, id(font_response), Color::BLACK, TextAlign::TOP_CENTER, "%s", id(ha_time).now().strftime("%H:%M").c_str());
       - id: muted_page
         lambda: |-
           it.fill(Color::BLACK);
