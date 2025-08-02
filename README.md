@@ -9,7 +9,8 @@
 ---
 
 ## ✨ 功能亮点
-
+* **海绵宝宝表情图**:
+    * ![hmbb](https://github.com/JochenZhou/xingzhi-ha-voice/blob/main/images/hmbb/240x240/replying.png)
 * **完整语音助手功能**:
     * 支持 **离线唤醒词** (`micro_wake_word`)，默认包含 `okay_nabu`, `hey_mycroft`, `hey_jarvis` 等多个唤醒词模型。
     * 与 Home Assistant 深度集成，支持语音指令识别 (STT)、语音合成 (TTS) 和意图 (Intent) 处理。
@@ -84,3 +85,4 @@
 * https://github.com/esphome/wake-word-voice-assistants
 * https://github.com/RealDeco/xiaozhi-esphome
 * 此项目基于 ESPHome 官方提供的语音助手示例进行修改和增强，并针对行者 星智1.54 WiFi 硬件进行了适配。感谢 ESPHome 和 Home Assistant 社区的卓越工作。
+
